@@ -1,9 +1,53 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
   ],
   "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
   ],
-  "profile": { "name": "typicode" }
+  "students": [
+    {
+      "name": "Cuong",
+      "age": "20",
+      "id": 5
+    },
+    {
+      "name": "Khoa",
+      "age": "16",
+      "id": 6
+    },
+    {
+      "name": "Sang",
+      "age": "21",
+      "id": 7
+    },
+    {
+      "name": "Huy",
+      "age": "19",
+      "id": 8
+    },
+    {
+      "name": "Anh",
+      "age": "20",
+      "id": 9
+    },
+    {
+      "name": "Kham",
+      "age": "20",
+      "id": 10
+    },
+    {
+      "name": "Truong",
+      "age": "21",
+      "id": 11
+    }
+  ]
 }

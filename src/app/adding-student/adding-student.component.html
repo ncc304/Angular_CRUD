@@ -1,0 +1,10 @@
+<h1>Add Student</h1>
+<form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+  <div class="sizes">
+    <input type="text" required [(ngModel)]="name" name="name" placeholder="Name"/> <br/>  <br>
+    <input type="text" required [(ngModel)]="age" name="age" placeholder="Age" 
+    maxlength="110" pattern="[0-9]" title="Invalid age"/> <br/> <br>
+    <p-button type='submit' label="Save" icon="pi pi-check" styleClass="p-button-sm"></p-button>
+    <p style="color: green" *ngIf="check">Add successfully</p>
+  </div>
+</form>

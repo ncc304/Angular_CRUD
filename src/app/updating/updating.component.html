@@ -1,0 +1,9 @@
+<h1>Update Student</h1>
+<form (ngSubmit)="onSubmit()" >
+  
+  <div class="sizes">
+    Name <input type="text" required [(ngModel)]="name" name="name" /> <br />
+    Age <input type="text" required [(ngModel)]="age" name="age" /> <br>
+    <p-button type='submit' label="Save" icon="pi pi-check" styleClass="p-button-sm"></p-button>
+  </div>
+</form>

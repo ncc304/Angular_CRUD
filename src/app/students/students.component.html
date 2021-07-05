@@ -1,0 +1,38 @@
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Student Name</th>
+    <th>Age</th>
+    <th>Delete</th>
+    <th>Update</th>
+  </tr>
+  <tr *ngFor="let student of students">
+    <td>{{student.id}}</td>
+    <td>{{ student.name }}</td>
+    <td>{{ student.age }}</td>
+    <td>
+      <!-- <button 
+        pButton pRipple type="button" class="p-button-rounded p-button-danger"
+        (click)="deleteStudent(student.id)"> 
+        <i class="pi pi-trash"></i>
+      </button> -->
+
+      <button pButton pRipple type="submit" icon="pi pi-times" class="p-button-rounded p-button-danger"
+      (click)="deleteStudent(student.id)">
+      </button>
+
+    </td>
+    <td>
+      <!-- <button (click)="navigateUpdate(student.id)">Update</button> -->
+      <button pButton pRipple type="button" icon="pi pi-user" class="p-button-rounded p-button-info"
+      (click)="navigateUpdate(student.id)">
+      </button>
+    </td>
+  </tr>
+</table>
+<hr>
+
+<button pButton pRipple type="button" class="p-button-rounded p-button-success" style="margin-left: 45%;"
+(click)="nagivateAdd()" label='New Student' icon='pi pi-plus-circle'>
+</button>
